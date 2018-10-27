@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-terminal",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",

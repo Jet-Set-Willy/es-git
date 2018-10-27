@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-save-as-mixin",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
@@ -39,7 +39,7 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@rs4/es-git-core": "^0.9.0",
-    "@rs4/es-git-object-mixin": "^0.9.0"
+    "@rs4/es-git-core": "^0.9.1",
+    "@rs4/es-git-object-mixin": "^0.9.1"
   }
 }
