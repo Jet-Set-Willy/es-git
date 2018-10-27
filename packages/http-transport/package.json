@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-http-transport",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
