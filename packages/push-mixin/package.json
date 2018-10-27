@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-push-mixin",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
@@ -39,15 +39,15 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@rs4/es-git-core": "^0.9.1",
-    "@rs4/es-git-http-transport": "^0.9.1",
-    "@rs4/es-git-object-mixin": "^0.9.1",
-    "@rs4/es-git-packfile": "^0.9.1",
-    "@rs4/es-git-walkers-mixin": "^0.9.1",
+    "@rs4/es-git-core": "^0.9.2",
+    "@rs4/es-git-http-transport": "^0.9.2",
+    "@rs4/es-git-object-mixin": "^0.9.2",
+    "@rs4/es-git-packfile": "^0.9.2",
+    "@rs4/es-git-walkers-mixin": "^0.9.2",
     "text-encoding": "^0.6.4"
   },
   "devDependencies": {
-    "@rs4/es-git-ascii-graph-walker": "^0.9.1"
+    "@rs4/es-git-ascii-graph-walker": "^0.9.2"
   },
   "gitHead": "e0300ee125e7549e3152a5ab28879510f517b27c"
 }
