@@ -37,5 +37,6 @@
   },
   "peerDependencies": {
     "babel-runtime": "^6.22.0"
-  }
+  },
+  "gitHead": "e0300ee125e7549e3152a5ab28879510f517b27c"
 }

@@ -43,5 +43,6 @@
     "@rs4/es-git-object-mixin": "^0.9.1",
     "@rs4/es-git-walkers-mixin": "^0.9.1",
     "text-encoding": "~0.6.4"
-  }
+  },
+  "gitHead": "e0300ee125e7549e3152a5ab28879510f517b27c"
 }

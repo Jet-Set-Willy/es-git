@@ -41,5 +41,6 @@
   "dependencies": {
     "@rs4/es-git-core": "^0.9.1",
     "@rs4/es-git-http-transport": "^0.9.1"
-  }
+  },
+  "gitHead": "e0300ee125e7549e3152a5ab28879510f517b27c"
 }
