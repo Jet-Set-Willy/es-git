@@ -8,7 +8,8 @@
     "babel": "lerna run babel",
     "compile": "lerna run compile",
     "tsc": "lerna run tsc",
-    "watch": "lerna run watch"
+    "watch": "lerna run watch",
+    "pub": "lerna publish --registry=https://r.rs4.co/repository/rsn/"
   },
   "dependencies": {
     "@types/node": "^8.10.18",
