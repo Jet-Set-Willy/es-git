@@ -1,5 +1,5 @@
 import test from 'ava';
-import { IRawRepo } from '@es-git/core';
+import { IRawRepo } from '@rs4/es-git-core';
 
 import zlibMixin from './index';
 

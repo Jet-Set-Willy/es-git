@@ -1,5 +1,5 @@
 // https://github.com/git/git/blob/master/Documentation/technical/protocol-common.txt
-import { NEWLINE, toHexChar, encode } from '@es-git/core';
+import { NEWLINE, toHexChar, encode } from '@rs4/es-git-core';
 
 export default function pktLine(line : Uint8Array | string | null, newline=true){
   if(line === null){

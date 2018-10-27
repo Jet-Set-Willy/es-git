@@ -1,5 +1,5 @@
 {
-  "name": "@es-git/http-transport",
+  "name": "@rs4/es-git-http-transport",
   "version": "0.9.0",
   "description": "",
   "main": "js/index.js",
@@ -39,8 +39,8 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@es-git/core": "^0.9.0",
-    "@es-git/packfile": "^0.9.0"
+    "@rs4/es-git-core": "^0.9.0",
+    "@rs4/es-git-packfile": "^0.9.0"
   },
   "devDependencies": {
     "@types/node-fetch": "^1.6.9",

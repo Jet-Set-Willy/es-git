@@ -1,4 +1,4 @@
-import { concat } from '@es-git/core';
+import { concat } from '@rs4/es-git-core';
 
 export default async function asyncIteratorToBuffer(iterator : AsyncIterableIterator<Uint8Array>){
   const body = [];

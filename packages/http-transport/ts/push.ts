@@ -1,4 +1,4 @@
-import { pack, Progress, HashBlob } from '@es-git/packfile';
+import { pack, Progress, HashBlob } from '@rs4/es-git-packfile';
 
 import composePushRequest, { Command } from './composePushRequest';
 import post, { Fetch, Auth } from './post';

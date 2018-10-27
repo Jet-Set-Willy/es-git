@@ -1,7 +1,7 @@
 import {
   packHash,
   sha1
-} from '@es-git/core';
+} from '@rs4/es-git-core';
 
 import * as pako from 'pako';
 

@@ -5,13 +5,13 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/terminal
+npm install --save @rs4/es-git-terminal
 ```
 
 ## Usage
 
 ```ts
-import Teminal from '@es-git/terminal';
+import Teminal from '@rs4/es-git-terminal';
 
 //Create a terminal, and log to the console
 const terminal = new Terminal(m => console.log(m));

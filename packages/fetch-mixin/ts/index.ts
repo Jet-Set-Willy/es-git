@@ -1,5 +1,5 @@
-import { Constructor, IRawRepo, Hash, encode, decode } from '@es-git/core';
-import { fetch as gitFetch, lsRemote, Fetch, Ref, RefChange, Progress } from '@es-git/http-transport';
+import { Constructor, IRawRepo, Hash, encode, decode } from '@rs4/es-git-core';
+import { fetch as gitFetch, lsRemote, Fetch, Ref, RefChange, Progress } from '@rs4/es-git-http-transport';
 
 export interface FetchOptions {
   readonly depth? : number,

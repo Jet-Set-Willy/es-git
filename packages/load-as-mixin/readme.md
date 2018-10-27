@@ -5,19 +5,19 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/load-as-mixin
+npm install --save @rs4/es-git-load-as-mixin
 ```
 
 ## Usage
 
-Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@es-git/object-mixin#IObjectRepo).
+Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@rs4/es-git-object-mixin#IObjectRepo).
 
 This mixin makes it easier to load objects from the repo. Each method takes a hash and attempts to load the object with that hash. If the object does not exist or is not of the type exected, an `Error` is thrown.
 
 ```js
-import objectsMixin from '@es-git/objects-mixin';
-import loadAsMixin from '@es-git/load-as-mixin';
-import MemoryRepo from '@es-git/memory-repo';
+import objectsMixin from '@rs4/es-git-objects-mixin';
+import loadAsMixin from '@rs4/es-git-load-as-mixin';
+import MemoryRepo from '@rs4/es-git-memory-repo';
 
 const Repo = mix(MemoryRepo)
             .with(objectsMixin)

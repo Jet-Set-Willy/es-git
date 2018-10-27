@@ -1,5 +1,5 @@
-import { Type, Constructor, Hash, decode } from '@es-git/core';
-import { IObjectRepo, TreeObject, BlobObject } from '@es-git/object-mixin';
+import { Type, Constructor, Hash, decode } from '@rs4/es-git-core';
+import { IObjectRepo, TreeObject, BlobObject } from '@rs4/es-git-object-mixin';
 
 export interface IPathToObjectRepo {
   loadObjectByPath(rootTree : Hash, path : string | string[]) : Promise<TreeObject | BlobObject | undefined>

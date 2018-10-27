@@ -4,7 +4,7 @@ import {
   unpackHash,
   fromDec,
   fromOct
-} from '@es-git/core';
+} from '@rs4/es-git-core';
 
 import {
   GitObject,

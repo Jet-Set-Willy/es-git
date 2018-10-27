@@ -1,4 +1,4 @@
-import { withFeedback } from '@es-git/walkers-mixin';
+import { withFeedback } from '@rs4/es-git-walkers-mixin';
 
 export interface CommitWithParents {
   readonly parents : string[]

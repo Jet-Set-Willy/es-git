@@ -1,5 +1,5 @@
 import test from 'ava';
-import { parse } from '@es-git/ascii-graph-walker';
+import { parse } from '@rs4/es-git-ascii-graph-walker';
 
 import findCommonCommits from './findCommonCommits';
 

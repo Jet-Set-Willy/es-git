@@ -1,5 +1,5 @@
 {
-  "name": "@es-git/packfile",
+  "name": "@rs4/es-git-packfile",
   "version": "0.9.0",
   "description": "",
   "main": "js/index.js",
@@ -39,7 +39,7 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@es-git/core": "^0.9.0",
+    "@rs4/es-git-core": "^0.9.0",
     "pako": "^1.0.5"
   }
 }

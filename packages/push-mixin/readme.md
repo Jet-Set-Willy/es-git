@@ -5,20 +5,20 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/push-mixin
+npm install --save @rs4/es-git-push-mixin
 ```
 
 ## Usage
 
-Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@es-git/object-mixin#IObjectRepo) and [IWalkersMixin](https://www.npmjs.com/package/@es-git/walkers-mixin#IWalkersMixin).
+Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@rs4/es-git-object-mixin#IObjectRepo) and [IWalkersMixin](https://www.npmjs.com/package/@rs4/es-git-walkers-mixin#IWalkersMixin).
 
 This mixin adds the ability to push local branches to a remote repository, using the [smart HTTP transport](https://git-scm.com/blog/2010/03/04/smart-http.html) protocol. This works well with online git hosts, like GitHub, GitLab, BitBucket and others.
 
 ```js
-import objectsMixin from '@es-git/objects-mixin';
-import walkersMixin from '@es-git/walkers-mixin';
-import pushMixin from '@es-git/push-mixin';
-import MemoryRepo from '@es-git/memory-repo';
+import objectsMixin from '@rs4/es-git-objects-mixin';
+import walkersMixin from '@rs4/es-git-walkers-mixin';
+import pushMixin from '@rs4/es-git-push-mixin';
+import MemoryRepo from '@rs4/es-git-memory-repo';
 
 const Repo = mix(MemoryRepo)
             .with(objectsMixin)

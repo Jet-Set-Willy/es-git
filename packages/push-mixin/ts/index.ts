@@ -1,7 +1,7 @@
-import { Constructor, IRawRepo } from '@es-git/core';
-import { IObjectRepo } from '@es-git/object-mixin';
-import { IWalkersRepo } from '@es-git/walkers-mixin';
-import { lsRemote, push, Fetch, Command, Auth, Progress } from '@es-git/http-transport';
+import { Constructor, IRawRepo } from '@rs4/es-git-core';
+import { IObjectRepo } from '@rs4/es-git-object-mixin';
+import { IWalkersRepo } from '@rs4/es-git-walkers-mixin';
+import { lsRemote, push, Fetch, Command, Auth, Progress } from '@rs4/es-git-http-transport';
 import getObjectsToPush from './getObjectsToPush';
 
 export { Fetch, Auth };

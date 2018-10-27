@@ -1,9 +1,9 @@
-import mix from '@es-git/mix';
-import MemoryRepo from '@es-git/memory-repo';
-import object from '@es-git/object-mixin';
-import walkers from '@es-git/walkers-mixin';
-import fetchMixin from '@es-git/fetch-mixin';
-import Terminal from '@es-git/terminal';
+import mix from '@rs4/es-git-mix';
+import MemoryRepo from '@rs4/es-git-memory-repo';
+import object from '@rs4/es-git-object-mixin';
+import walkers from '@rs4/es-git-walkers-mixin';
+import fetchMixin from '@rs4/es-git-fetch-mixin';
+import Terminal from '@rs4/es-git-terminal';
 
 const formElm = document.querySelector<HTMLFormElement>('form') as HTMLFormElement;
 const inputElm = document.querySelector<HTMLInputElement>('#repo') as HTMLInputElement;

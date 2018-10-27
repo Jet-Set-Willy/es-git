@@ -1,5 +1,5 @@
 import * as pako from 'pako';
-import { AsyncBuffer, unpackHash } from '@es-git/core';
+import { AsyncBuffer, unpackHash } from '@rs4/es-git-core';
 import DigestableAsyncBuffer from './DigestableAsyncBuffer';
 
 import {

@@ -1,0 +1,399 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /home/tom/Github/mod-es-git
+3 info version 2.11.0
+4 silly existsSync /home/tom/Github/mod-es-git/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 24 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall @rs4/es-git-mix
+12 silly @rs4/es-git-mix
+13 silly runScript preinstall @rs4/es-git-node-git-proxy
+14 silly @rs4/es-git-node-git-proxy
+15 silly runScript preinstall @rs4/es-git-terminal
+16 silly @rs4/es-git-terminal
+17 silly runScript preinstall @rs4/es-git-core
+18 silly @rs4/es-git-core
+19 silly runScript preinstall @rs4/es-git-__template__
+20 silly @rs4/es-git-__template__
+21 silly runScript preinstall @rs4/es-git-ascii-graph-walker
+22 silly @rs4/es-git-ascii-graph-walker
+23 silly runScript preinstall @rs4/es-git-idb-repo
+24 silly @rs4/es-git-idb-repo
+25 silly runScript preinstall @rs4/es-git-memory-repo
+26 silly @rs4/es-git-memory-repo
+27 silly runScript preinstall @rs4/es-git-node-fs-repo
+28 silly @rs4/es-git-node-fs-repo
+29 silly runScript preinstall @rs4/es-git-object-mixin
+30 silly @rs4/es-git-object-mixin
+31 silly runScript preinstall @rs4/es-git-packfile
+32 silly @rs4/es-git-packfile
+33 silly runScript preinstall @rs4/es-git-zlib-mixin
+34 silly @rs4/es-git-zlib-mixin
+35 silly runScript preinstall @rs4/es-git-cache-objects-mixin
+36 silly @rs4/es-git-cache-objects-mixin
+37 silly runScript preinstall @rs4/es-git-http-transport
+38 silly @rs4/es-git-http-transport
+39 silly runScript preinstall @rs4/es-git-load-as-mixin
+40 silly @rs4/es-git-load-as-mixin
+41 silly runScript preinstall @rs4/es-git-path-to-object-mixin
+42 silly @rs4/es-git-path-to-object-mixin
+43 silly runScript preinstall @rs4/es-git-read-combiner-mixin
+44 silly @rs4/es-git-read-combiner-mixin
+45 silly runScript preinstall @rs4/es-git-save-as-mixin
+46 silly @rs4/es-git-save-as-mixin
+47 silly runScript preinstall @rs4/es-git-walkers-mixin
+48 silly @rs4/es-git-walkers-mixin
+49 silly runScript preinstall @rs4/es-git-checkout-mixin
+50 silly @rs4/es-git-checkout-mixin
+51 silly runScript preinstall @rs4/es-git-commit-mixin
+52 silly @rs4/es-git-commit-mixin
+53 silly runScript preinstall @rs4/es-git-fetch-mixin
+54 silly @rs4/es-git-fetch-mixin
+55 silly runScript preinstall @rs4/es-git-push-mixin
+56 silly @rs4/es-git-push-mixin
+57 silly runScript preinstall @rs4/es-git-example
+58 silly @rs4/es-git-example
+59 silly hasMatchingDependency @rs4/es-git-__template__ @rs4/es-git-core
+60 silly hasMatchingDependency @rs4/es-git-ascii-graph-walker @rs4/es-git-core
+61 silly hasMatchingDependency @rs4/es-git-cache-objects-mixin @rs4/es-git-core
+62 silly hasMatchingDependency @rs4/es-git-cache-objects-mixin @rs4/es-git-object-mixin
+63 silly hasMatchingDependency @rs4/es-git-checkout-mixin @rs4/es-git-core
+64 silly hasMatchingDependency @rs4/es-git-checkout-mixin @rs4/es-git-object-mixin
+65 silly hasMatchingDependency @rs4/es-git-checkout-mixin @rs4/es-git-walkers-mixin
+66 silly hasMatchingDependency @rs4/es-git-commit-mixin @rs4/es-git-core
+67 silly hasMatchingDependency @rs4/es-git-commit-mixin @rs4/es-git-object-mixin
+68 silly hasMatchingDependency @rs4/es-git-commit-mixin @rs4/es-git-walkers-mixin
+69 silly hasMatchingDependency @rs4/es-git-core @rs4/es-git-mix
+70 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-checkout-mixin
+71 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-commit-mixin
+72 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-core
+73 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-fetch-mixin
+74 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-load-as-mixin
+75 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-memory-repo
+76 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-mix
+77 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-node-fs-repo
+78 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-node-git-proxy
+79 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-object-mixin
+80 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-path-to-object-mixin
+81 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-push-mixin
+82 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-save-as-mixin
+83 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-terminal
+84 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-walkers-mixin
+85 silly hasMatchingDependency @rs4/es-git-example @rs4/es-git-zlib-mixin
+86 silly hasMatchingDependency @rs4/es-git-fetch-mixin @rs4/es-git-core
+87 silly hasMatchingDependency @rs4/es-git-fetch-mixin @rs4/es-git-http-transport
+88 silly hasMatchingDependency @rs4/es-git-http-transport @rs4/es-git-core
+89 silly hasMatchingDependency @rs4/es-git-http-transport @rs4/es-git-packfile
+90 silly hasMatchingDependency @rs4/es-git-idb-repo @rs4/es-git-core
+91 silly hasMatchingDependency @rs4/es-git-load-as-mixin @rs4/es-git-core
+92 silly hasMatchingDependency @rs4/es-git-load-as-mixin @rs4/es-git-object-mixin
+93 silly hasMatchingDependency @rs4/es-git-memory-repo @rs4/es-git-core
+94 silly hasMatchingDependency @rs4/es-git-node-fs-repo @rs4/es-git-core
+95 silly hasMatchingDependency @rs4/es-git-object-mixin @rs4/es-git-core
+96 silly hasMatchingDependency @rs4/es-git-packfile @rs4/es-git-core
+97 silly hasMatchingDependency @rs4/es-git-path-to-object-mixin @rs4/es-git-core
+98 silly hasMatchingDependency @rs4/es-git-path-to-object-mixin @rs4/es-git-object-mixin
+99 silly hasMatchingDependency @rs4/es-git-push-mixin @rs4/es-git-ascii-graph-walker
+100 silly hasMatchingDependency @rs4/es-git-push-mixin @rs4/es-git-core
+101 silly hasMatchingDependency @rs4/es-git-push-mixin @rs4/es-git-http-transport
+102 silly hasMatchingDependency @rs4/es-git-push-mixin @rs4/es-git-packfile
+103 silly hasMatchingDependency @rs4/es-git-push-mixin @rs4/es-git-walkers-mixin
+104 silly hasMatchingDependency @rs4/es-git-read-combiner-mixin @rs4/es-git-core
+105 silly hasMatchingDependency @rs4/es-git-read-combiner-mixin @rs4/es-git-object-mixin
+106 silly hasMatchingDependency @rs4/es-git-save-as-mixin @rs4/es-git-core
+107 silly hasMatchingDependency @rs4/es-git-save-as-mixin @rs4/es-git-object-mixin
+108 silly hasMatchingDependency @rs4/es-git-walkers-mixin @rs4/es-git-core
+109 silly hasMatchingDependency @rs4/es-git-walkers-mixin @rs4/es-git-object-mixin
+110 silly hasMatchingDependency @rs4/es-git-zlib-mixin @rs4/es-git-core
+111 silly hasDependencyInstalled @rs4/es-git-zlib-mixin @types/pako
+112 silly dependencyIsSatisfied [ '@types/pako',
+112 silly dependencyIsSatisfied   '^1.0.0',
+112 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/zlib-mixin/node_modules' ]
+113 verbose dependencyIsSatisfied @types/pako true
+114 silly hasDependencyInstalled @rs4/es-git-commit-mixin text-encoding
+115 silly dependencyIsSatisfied [ 'text-encoding',
+115 silly dependencyIsSatisfied   '~0.6.4',
+115 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/commit-mixin/node_modules' ]
+116 verbose dependencyIsSatisfied text-encoding true
+117 silly hasDependencyInstalled @rs4/es-git-core text-encoding
+118 silly dependencyIsSatisfied [ 'text-encoding',
+118 silly dependencyIsSatisfied   '^0.6.4',
+118 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/core/node_modules' ]
+119 verbose dependencyIsSatisfied text-encoding true
+120 silly hasDependencyInstalled @rs4/es-git-example @types/d3
+121 silly dependencyIsSatisfied [ '@types/d3',
+121 silly dependencyIsSatisfied   '^4.10.0',
+121 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+122 verbose dependencyIsSatisfied @types/d3 false
+123 silly hasDependencyInstalled @rs4/es-git-example @types/node-fetch
+124 silly dependencyIsSatisfied [ '@types/node-fetch',
+124 silly dependencyIsSatisfied   '^1.6.7',
+124 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+125 verbose dependencyIsSatisfied @types/node-fetch false
+126 silly hasDependencyInstalled @rs4/es-git-http-transport @types/node-fetch
+127 silly dependencyIsSatisfied [ '@types/node-fetch',
+127 silly dependencyIsSatisfied   '^1.6.9',
+127 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/http-transport/node_modules' ]
+128 verbose dependencyIsSatisfied @types/node-fetch true
+129 silly hasDependencyInstalled @rs4/es-git-example babel-loader
+130 silly dependencyIsSatisfied [ 'babel-loader',
+130 silly dependencyIsSatisfied   '^7.1.2',
+130 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+131 verbose dependencyIsSatisfied babel-loader false
+132 silly hasDependencyInstalled @rs4/es-git-example source-map-loader
+133 silly dependencyIsSatisfied [ 'source-map-loader',
+133 silly dependencyIsSatisfied   '^0.2.1',
+133 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+134 verbose dependencyIsSatisfied source-map-loader false
+135 silly hasDependencyInstalled @rs4/es-git-example ts-loader
+136 silly dependencyIsSatisfied [ 'ts-loader',
+136 silly dependencyIsSatisfied   '^2.3.3',
+136 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+137 verbose dependencyIsSatisfied ts-loader false
+138 silly hasDependencyInstalled @rs4/es-git-example webpack
+139 silly dependencyIsSatisfied [ 'webpack',
+139 silly dependencyIsSatisfied   '^3.5.5',
+139 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+140 verbose dependencyIsSatisfied webpack false
+141 silly hasDependencyInstalled @rs4/es-git-example d3
+142 silly dependencyIsSatisfied [ 'd3',
+142 silly dependencyIsSatisfied   '^4.10.0',
+142 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+143 verbose dependencyIsSatisfied d3 false
+144 silly hasDependencyInstalled @rs4/es-git-example gitgraph.js
+145 silly dependencyIsSatisfied [ 'gitgraph.js',
+145 silly dependencyIsSatisfied   '^1.11.4',
+145 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+146 verbose dependencyIsSatisfied gitgraph.js false
+147 silly hasDependencyInstalled @rs4/es-git-example koa
+148 silly dependencyIsSatisfied [ 'koa',
+148 silly dependencyIsSatisfied   '^2.3.0',
+148 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+149 verbose dependencyIsSatisfied koa false
+150 silly hasDependencyInstalled @rs4/es-git-example koa-favicon
+151 silly dependencyIsSatisfied [ 'koa-favicon',
+151 silly dependencyIsSatisfied   '^2.0.0',
+151 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+152 verbose dependencyIsSatisfied koa-favicon false
+153 silly hasDependencyInstalled @rs4/es-git-example koa-mount
+154 silly dependencyIsSatisfied [ 'koa-mount',
+154 silly dependencyIsSatisfied   '^3.0.0',
+154 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+155 verbose dependencyIsSatisfied koa-mount false
+156 silly hasDependencyInstalled @rs4/es-git-example koa-static
+157 silly dependencyIsSatisfied [ 'koa-static',
+157 silly dependencyIsSatisfied   '^4.0.1',
+157 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+158 verbose dependencyIsSatisfied koa-static false
+159 silly hasDependencyInstalled @rs4/es-git-example node-fetch
+160 silly dependencyIsSatisfied [ 'node-fetch',
+160 silly dependencyIsSatisfied   '^1.7.2',
+160 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/example/node_modules' ]
+161 verbose dependencyIsSatisfied node-fetch false
+162 silly hasDependencyInstalled @rs4/es-git-http-transport node-fetch
+163 silly dependencyIsSatisfied [ 'node-fetch',
+163 silly dependencyIsSatisfied   '^2.1.2',
+163 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/http-transport/node_modules' ]
+164 verbose dependencyIsSatisfied node-fetch true
+165 silly hasDependencyInstalled @rs4/es-git-idb-repo idb
+166 silly dependencyIsSatisfied [ 'idb',
+166 silly dependencyIsSatisfied   '^2.0.3',
+166 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/idb-repo/node_modules' ]
+167 verbose dependencyIsSatisfied idb true
+168 silly hasDependencyInstalled @rs4/es-git-packfile pako
+169 silly dependencyIsSatisfied [ 'pako',
+169 silly dependencyIsSatisfied   '^1.0.5',
+169 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/packfile/node_modules' ]
+170 verbose dependencyIsSatisfied pako true
+171 silly hasDependencyInstalled @rs4/es-git-zlib-mixin pako
+172 silly dependencyIsSatisfied [ 'pako',
+172 silly dependencyIsSatisfied   '^0.2.5',
+172 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/zlib-mixin/node_modules' ]
+173 verbose dependencyIsSatisfied pako true
+174 silly hasDependencyInstalled @rs4/es-git-push-mixin @rs4/es-git-object-mixin
+175 silly dependencyIsSatisfied [ '@rs4/es-git-object-mixin',
+175 silly dependencyIsSatisfied   '^0.0.1',
+175 silly dependencyIsSatisfied   '/home/tom/Github/mod-es-git/packages/push-mixin/node_modules' ]
+176 verbose dependencyIsSatisfied @rs4/es-git-object-mixin false
+177 silly root dependencies []
+178 silly leaf dependencies {
+178 silly leaf dependencies   "@rs4/es-git-zlib-mixin": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "@types/pako@^1.0.0",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "pako@^0.2.5",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-commit-mixin": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "text-encoding@~0.6.4",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-core": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "text-encoding@^0.6.4",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-example": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "@types/d3@^4.10.0",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "@types/node-fetch@^1.6.7",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "babel-loader@^7.1.2",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "source-map-loader@^0.2.1",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "ts-loader@^2.3.3",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "webpack@^3.5.5",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "d3@^4.10.0",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "gitgraph.js@^1.11.4",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "koa@^2.3.0",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "koa-favicon@^2.0.0",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "koa-mount@^3.0.0",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "koa-static@^4.0.1",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "node-fetch@^1.7.2",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-http-transport": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "@types/node-fetch@^1.6.9",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     },
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "node-fetch@^2.1.2",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-idb-repo": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "idb@^2.0.3",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-packfile": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "pako@^1.0.5",
+178 silly leaf dependencies       "isSatisfied": true
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ],
+178 silly leaf dependencies   "@rs4/es-git-push-mixin": [
+178 silly leaf dependencies     {
+178 silly leaf dependencies       "dependency": "@rs4/es-git-object-mixin@^0.0.1",
+178 silly leaf dependencies       "isSatisfied": false
+178 silly leaf dependencies     }
+178 silly leaf dependencies   ]
+178 silly leaf dependencies }
+179 info Installing external dependencies
+180 verbose actions 2 actions, concurrency 4
+181 silly installInDir example [ '@types/d3@^4.10.0',
+181 silly installInDir   '@types/node-fetch@^1.6.7',
+181 silly installInDir   'babel-loader@^7.1.2',
+181 silly installInDir   'source-map-loader@^0.2.1',
+181 silly installInDir   'ts-loader@^2.3.3',
+181 silly installInDir   'webpack@^3.5.5',
+181 silly installInDir   'd3@^4.10.0',
+181 silly installInDir   'gitgraph.js@^1.11.4',
+181 silly installInDir   'koa@^2.3.0',
+181 silly installInDir   'koa-favicon@^2.0.0',
+181 silly installInDir   'koa-mount@^3.0.0',
+181 silly installInDir   'koa-static@^4.0.1',
+181 silly installInDir   'node-fetch@^1.7.2' ]
+182 silly installInDir backup /home/tom/Github/mod-es-git/packages/example/package.json
+183 silly rename [ '/home/tom/Github/mod-es-git/packages/example/package.json',
+183 silly rename   '/home/tom/Github/mod-es-git/packages/example/package.json.lerna_backup' ]
+184 silly installInDir push-mixin [ '@rs4/es-git-object-mixin@^0.0.1' ]
+185 silly installInDir backup /home/tom/Github/mod-es-git/packages/push-mixin/package.json
+186 silly rename [ '/home/tom/Github/mod-es-git/packages/push-mixin/package.json',
+186 silly rename   '/home/tom/Github/mod-es-git/packages/push-mixin/package.json.lerna_backup' ]
+187 silly installInDir writing tempJson { dependencies:
+187 silly installInDir    { '@types/d3': '^4.10.0',
+187 silly installInDir      '@types/node-fetch': '^1.6.7',
+187 silly installInDir      'babel-loader': '^7.1.2',
+187 silly installInDir      'source-map-loader': '^0.2.1',
+187 silly installInDir      'ts-loader': '^2.3.3',
+187 silly installInDir      webpack: '^3.5.5',
+187 silly installInDir      d3: '^4.10.0',
+187 silly installInDir      'gitgraph.js': '^1.11.4',
+187 silly installInDir      koa: '^2.3.0',
+187 silly installInDir      'koa-favicon': '^2.0.0',
+187 silly installInDir      'koa-mount': '^3.0.0',
+187 silly installInDir      'koa-static': '^4.0.1',
+187 silly installInDir      'node-fetch': '^1.7.2' } }
+188 silly installInDir writing tempJson { dependencies: { '@rs4/es-git-object-mixin': '^0.0.1' } }
+189 silly getExecOpts { cwd: '/home/tom/Github/mod-es-git/packages/example' }
+190 silly installInDir [ 'npm', [ 'install' ] ]
+191 silly getExecOpts { cwd: '/home/tom/Github/mod-es-git/packages/push-mixin' }
+192 silly installInDir [ 'npm', [ 'install' ] ]
+193 silly installInDir cleanup /home/tom/Github/mod-es-git/packages/push-mixin/package.json
+194 silly renameSync [ '/home/tom/Github/mod-es-git/packages/push-mixin/package.json.lerna_backup',
+194 silly renameSync   '/home/tom/Github/mod-es-git/packages/push-mixin/package.json' ]
+195 verbose installed leaf @rs4/es-git-push-mixin
+196 error execute callback with error
+197 error Error: Command failed: npm install
+197 error npm WARN tar ENOENT: no such file or directory, open '/home/tom/Github/mod-es-git/packages/push-mixin/node_modules/.staging/text-encoding-6c8ccde1/lib/encoding.js'
+197 error npm WARN @rs4/es-git-core@0.0.1 requires a peer of babel-runtime@^6.22.0 but none is installed. You must install peer dependencies yourself.
+197 error npm WARN push-mixin No repository field.
+197 error npm WARN push-mixin No license field.
+197 error
+197 error npm ERR! path /home/tom/Github/mod-es-git/packages/push-mixin/node_modules/.staging/@rs4/es-git-core-0c3efbeb/node_modules/text-encoding
+197 error npm ERR! code ENOENT
+197 error npm ERR! errno -2
+197 error npm ERR! syscall rename
+197 error npm ERR! enoent ENOENT: no such file or directory, rename '/home/tom/Github/mod-es-git/packages/push-mixin/node_modules/.staging/@rs4/es-git-core-0c3efbeb/node_modules/text-encoding' -> '/home/tom/Github/mod-es-git/packages/push-mixin/node_modules/.staging/text-encoding-3a7ea565'
+197 error npm ERR! enoent This is related to npm not being able to find a file.
+197 error npm ERR! enoent
+197 error
+197 error npm ERR! A complete log of this run can be found in:
+197 error npm ERR!     /home/tom/.npm/_logs/2018-10-27T15_46_26_115Z-debug.log
+197 error
+197 error     at Promise.all.then.arr (/home/tom/Github/mod-es-git/node_modules/lerna/node_modules/execa/index.js:236:11)
+197 error     at <anonymous>

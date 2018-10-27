@@ -1,4 +1,4 @@
-import { Type, Mode, Constructor, IRawRepo, sha1 } from '@es-git/core';
+import { Type, Mode, Constructor, IRawRepo, sha1 } from '@rs4/es-git-core';
 
 import encodeObject, { textToBlob } from './encodeObject';
 import decodeObject, { blobToText } from './decodeObject';

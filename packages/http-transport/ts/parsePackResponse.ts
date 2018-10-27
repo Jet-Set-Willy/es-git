@@ -1,4 +1,4 @@
-import { AsyncBuffer, decode, fromHex, concat } from '@es-git/core';
+import { AsyncBuffer, decode, fromHex, concat } from '@rs4/es-git-core';
 
 export interface Response {
   readonly acks : string[]

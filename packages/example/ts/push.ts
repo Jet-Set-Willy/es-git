@@ -1,13 +1,13 @@
-import { Mode } from '@es-git/core';
-import mix from '@es-git/mix';
-import MemoryRepo from '@es-git/memory-repo';
-import object, { Person } from '@es-git/object-mixin';
-import walkers from '@es-git/walkers-mixin';
-import checkout from '@es-git/checkout-mixin';
-import commit, { Folder } from '@es-git/commit-mixin';
-import fetchMixin from '@es-git/fetch-mixin';
-import pushMixin from '@es-git/push-mixin';
-import Terminal from '@es-git/terminal';
+import { Mode } from '@rs4/es-git-core';
+import mix from '@rs4/es-git-mix';
+import MemoryRepo from '@rs4/es-git-memory-repo';
+import object, { Person } from '@rs4/es-git-object-mixin';
+import walkers from '@rs4/es-git-walkers-mixin';
+import checkout from '@rs4/es-git-checkout-mixin';
+import commit, { Folder } from '@rs4/es-git-commit-mixin';
+import fetchMixin from '@rs4/es-git-fetch-mixin';
+import pushMixin from '@rs4/es-git-push-mixin';
+import Terminal from '@rs4/es-git-terminal';
 
 (async function(){
 

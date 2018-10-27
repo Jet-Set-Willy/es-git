@@ -2,7 +2,7 @@ import {
   concat,
   encode,
   sha1
-} from '@es-git/core'
+} from '@rs4/es-git-core'
 
 import {
   Type,

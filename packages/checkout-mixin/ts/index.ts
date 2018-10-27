@@ -1,6 +1,6 @@
-import { Type, Mode, Constructor, IRawRepo, Hash, isFile, decode } from '@es-git/core';
-import { IObjectRepo } from '@es-git/object-mixin';
-import { IWalkersRepo } from '@es-git/walkers-mixin';
+import { Type, Mode, Constructor, IRawRepo, Hash, isFile, decode } from '@rs4/es-git-core';
+import { IObjectRepo } from '@rs4/es-git-object-mixin';
+import { IWalkersRepo } from '@rs4/es-git-walkers-mixin';
 
 export type Folder = {
   readonly hash : Hash

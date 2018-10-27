@@ -1,5 +1,5 @@
 import test from 'ava';
-import { IRawRepo, Type, Mode } from '@es-git/core';
+import { IRawRepo, Type, Mode } from '@rs4/es-git-core';
 
 import objectMixin, {
   GitObject

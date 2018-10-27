@@ -5,7 +5,7 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/fetch-mixin
+npm install --save @rs4/es-git-fetch-mixin
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install --save @es-git/fetch-mixin
 This mixin adds the ability to fetch remote branches to a local repository, using the [smart HTTP transport](https://git-scm.com/blog/2010/03/04/smart-http.html) protocol. This works well with online git hosts, like GitHub, GitLab, BitBucket and others.
 
 ```js
-import fetchMixin from '@es-git/fetch-mixin';
-import MemoryRepo from '@es-git/memory-repo';
+import fetchMixin from '@rs4/es-git-fetch-mixin';
+import MemoryRepo from '@rs4/es-git-memory-repo';
 
 const Repo = mix(MemoryRepo)
             .with(fetchMixin, fetch);

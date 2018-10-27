@@ -1,4 +1,4 @@
-import { AsyncBuffer, sha1, Sha1 } from '@es-git/core';
+import { AsyncBuffer, sha1, Sha1 } from '@rs4/es-git-core';
 
 export default class DigestableAsyncBuffer extends AsyncBuffer{
   private sha : Sha1

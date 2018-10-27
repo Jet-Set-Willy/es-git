@@ -1,5 +1,5 @@
 import test, { TestContext } from 'ava';
-import { encode, decode } from '@es-git/core';
+import { encode, decode } from '@rs4/es-git-core';
 
 import pktLine from './pkt-line';
 

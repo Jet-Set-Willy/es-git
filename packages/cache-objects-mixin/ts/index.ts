@@ -1,5 +1,5 @@
-import { Constructor, Hash } from '@es-git/core';
-import { IObjectRepo, GitObject } from '@es-git/object-mixin';
+import { Constructor, Hash } from '@rs4/es-git-core';
+import { IObjectRepo, GitObject } from '@rs4/es-git-object-mixin';
 
 import LRU, { Options } from './lru';
 

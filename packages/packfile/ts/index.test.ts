@@ -1,7 +1,7 @@
 import test from 'ava';
 import { pack, unpack, RawObject } from './index';
 
-import { encode, decode } from '@es-git/core';
+import { encode, decode } from '@rs4/es-git-core';
 import pipe from './pipe';
 
 test('pack-unpack', async t => {

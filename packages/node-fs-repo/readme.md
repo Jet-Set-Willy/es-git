@@ -5,7 +5,7 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/node-fs-repo
+npm install --save @rs4/es-git-node-fs-repo
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ This is an implementation of [`IRawRepo`](https://github.com/es-git/es-git/packa
 **important:** you should use the [`zlib-mixin`](https://github.com/es-git/es-git/packages/zlib-mixin) if you want to load an existing git repo created with the git cli.
 
 ```ts
-import Repo from '@es-git/node-fs-repo';
+import Repo from '@rs4/es-git-node-fs-repo';
 
 const repo = new Repo(__dirname + '/.git');
 

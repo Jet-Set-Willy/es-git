@@ -1,4 +1,4 @@
-import { IRawRepo, Hash } from '@es-git/core';
+import { IRawRepo, Hash } from '@rs4/es-git-core';
 
 export default class MemoryRepo implements IRawRepo {
   private readonly objects: Map<string, Uint8Array>

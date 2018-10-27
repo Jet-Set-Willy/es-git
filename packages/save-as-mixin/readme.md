@@ -5,19 +5,19 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/save-as-mixin
+npm install --save @rs4/es-git-save-as-mixin
 ```
 
 ## Usage
 
-Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@es-git/object-mixin#IObjectRepo).
+Mix this in with an [IObjectRepo](https://www.npmjs.com/package/@rs4/es-git-object-mixin#IObjectRepo).
 
 This mixin makes it easier to save objects to the repo.
 
 ```js
-import objectsMixin from '@es-git/objects-mixin';
-import saveAsMixin from '@es-git/save-as-mixin';
-import MemoryRepo from '@es-git/memory-repo';
+import objectsMixin from '@rs4/es-git-objects-mixin';
+import saveAsMixin from '@rs4/es-git-save-as-mixin';
+import MemoryRepo from '@rs4/es-git-memory-repo';
 
 const Repo = mix(MemoryRepo)
             .with(objectsMixin)

@@ -1,7 +1,7 @@
 import test from 'ava';
 import * as sinon from 'sinon';
-import { Type, Mode, encode } from '@es-git/core';
-import { GitObject } from '@es-git/object-mixin';
+import { Type, Mode, encode } from '@rs4/es-git-core';
+import { GitObject } from '@rs4/es-git-object-mixin';
 
 import pathToObjectMixin from './index';
 

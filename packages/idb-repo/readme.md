@@ -5,7 +5,7 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/idb-repo
+npm install --save @rs4/es-git-idb-repo
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ This is an implementation of [`IRawRepo`](https://github.com/es-git/es-git/packa
 In addition to exporting an implementation of `IRawRepo` this package also exports an `init` method.
 
 ```ts
-import Repo, {init} from '@es-git/idb-repo';
+import Repo, {init} from '@rs4/es-git-idb-repo';
 
 const db = await init('my-repository');
 

@@ -5,7 +5,7 @@ This is part of the [ES-Git](https://github.com/es-git/es-git) project.
 ## Install
 
 ```bash
-npm install --save @es-git/core
+npm install --save @rs4/es-git-core
 ```
 
 ## Usage

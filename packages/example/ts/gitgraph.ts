@@ -1,8 +1,8 @@
-import mix from '@es-git/mix';
-import MemoryRepo from '@es-git/memory-repo';
-import object, { CommitBody } from '@es-git/object-mixin';
-import walkers from '@es-git/walkers-mixin';
-import fetchMixin from '@es-git/fetch-mixin';
+import mix from '@rs4/es-git-mix';
+import MemoryRepo from '@rs4/es-git-memory-repo';
+import object, { CommitBody } from '@rs4/es-git-object-mixin';
+import walkers from '@rs4/es-git-walkers-mixin';
+import fetchMixin from '@rs4/es-git-fetch-mixin';
 
 import * as d3 from 'd3';
 

@@ -6,7 +6,7 @@ import {
   concat,
   flatten,
   packHash
-} from '@es-git/core';
+} from '@rs4/es-git-core';
 
 import {
   GitObject,

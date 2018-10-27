@@ -1,5 +1,5 @@
 {
-  "name": "@es-git/core",
+  "name": "@rs4/es-git-core",
   "version": "0.9.0",
   "description": "",
   "main": "js/index.js",
@@ -42,7 +42,7 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@es-git/mix": "^0.9.0",
+    "@rs4/es-git-mix": "^0.9.0",
     "text-encoding": "^0.6.4"
   }
 }

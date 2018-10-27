@@ -1,5 +1,5 @@
-import { Constructor, Hash, Type } from '@es-git/core';
-import { IObjectRepo, TreeBody, CommitBody, TagBody, textToBlob } from '@es-git/object-mixin';
+import { Constructor, Hash, Type } from '@rs4/es-git-core';
+import { IObjectRepo, TreeBody, CommitBody, TagBody, textToBlob } from '@rs4/es-git-object-mixin';
 
 export interface ISaveAsRepo {
   saveBlob(blob : Uint8Array) : Promise<Hash>

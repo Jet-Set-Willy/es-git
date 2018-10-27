@@ -1,8 +1,8 @@
-import { Mode, mix } from '@es-git/core';
-import MemoryRepo from '@es-git/memory-repo';
-import objectMixin from '@es-git/object-mixin';
-import saveAsMixin from '@es-git/save-as-mixin';
-import loadAsMixin from '@es-git/load-as-mixin';
+import { Mode, mix } from '@rs4/es-git-core';
+import MemoryRepo from '@rs4/es-git-memory-repo';
+import objectMixin from '@rs4/es-git-object-mixin';
+import saveAsMixin from '@rs4/es-git-save-as-mixin';
+import loadAsMixin from '@rs4/es-git-load-as-mixin';
 
 async function test(){
   // Create the repository in memory and

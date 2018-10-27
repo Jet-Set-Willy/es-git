@@ -1,7 +1,7 @@
 import test from 'ava';
 import * as sinon from 'sinon';
-import { IRawRepo, Type } from '@es-git/core';
-import { IObjectRepo, GitObject, CommitObject, Person } from '@es-git/object-mixin';
+import { IRawRepo, Type } from '@rs4/es-git-core';
+import { IObjectRepo, GitObject, CommitObject, Person } from '@rs4/es-git-object-mixin';
 
 import commitMixin, {Folder} from './index';
 

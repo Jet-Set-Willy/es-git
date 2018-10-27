@@ -1,14 +1,14 @@
 import * as path from 'path';
-import { mix, Mode, Type, decode } from '@es-git/core';
-import NodeFsRepo from '@es-git/node-fs-repo';
-import zlib from '@es-git/zlib-mixin';
-import object from '@es-git/object-mixin';
-import walkers from '@es-git/walkers-mixin';
-import checkout from '@es-git/checkout-mixin';
-import commit from '@es-git/commit-mixin';
-import pathToObject from '@es-git/path-to-object-mixin';
-import fetchMixin from '@es-git/fetch-mixin';
-import pushMixin from '@es-git/push-mixin';
+import { mix, Mode, Type, decode } from '@rs4/es-git-core';
+import NodeFsRepo from '@rs4/es-git-node-fs-repo';
+import zlib from '@rs4/es-git-zlib-mixin';
+import object from '@rs4/es-git-object-mixin';
+import walkers from '@rs4/es-git-walkers-mixin';
+import checkout from '@rs4/es-git-checkout-mixin';
+import commit from '@rs4/es-git-commit-mixin';
+import pathToObject from '@rs4/es-git-path-to-object-mixin';
+import fetchMixin from '@rs4/es-git-fetch-mixin';
+import pushMixin from '@rs4/es-git-push-mixin';
 import nodeFetch, { Request, RequestInit, Response } from 'node-fetch';
 
 if (typeof btoa === 'undefined') {

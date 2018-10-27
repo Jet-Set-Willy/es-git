@@ -1,5 +1,5 @@
 {
-  "name": "@es-git/__template__",
+  "name": "@rs4/es-git-__template__",
   "private": true,
   "version": "0.9.0",
   "description": "",
@@ -40,6 +40,6 @@
     "babel-runtime": "^6.22.0"
   },
   "dependencies": {
-    "@es-git/core": "^0.9.0"
+    "@rs4/es-git-core": "^0.9.0"
   }
 }

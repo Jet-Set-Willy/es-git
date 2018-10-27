@@ -1,6 +1,6 @@
 import {
   decode
-} from '@es-git/core';
+} from '@rs4/es-git-core';
 
 import composePackfile from './compose-packfile';
 import {

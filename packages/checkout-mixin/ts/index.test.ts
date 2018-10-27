@@ -1,8 +1,8 @@
 import test from 'ava';
 import * as sinon from 'sinon';
-import { IRawRepo, Type, Mode, Hash, encode } from '@es-git/core';
-import { IObjectRepo, GitObject, CommitBody } from '@es-git/object-mixin';
-import { IWalkersRepo, HashModePath, HashAndCommitBody } from '@es-git/walkers-mixin';
+import { IRawRepo, Type, Mode, Hash, encode } from '@rs4/es-git-core';
+import { IObjectRepo, GitObject, CommitBody } from '@rs4/es-git-object-mixin';
+import { IWalkersRepo, HashModePath, HashAndCommitBody } from '@rs4/es-git-walkers-mixin';
 
 import checkoutMixin from './index';
 

@@ -1,6 +1,6 @@
-import { Hash } from '@es-git/core';
-import { withFeedback, HashAndCommitBody, HashModePath } from '@es-git/walkers-mixin';
-import { Progress } from '@es-git/http-transport';
+import { Hash } from '@rs4/es-git-core';
+import { withFeedback, HashAndCommitBody, HashModePath } from '@rs4/es-git-walkers-mixin';
+import { Progress } from '@rs4/es-git-http-transport';
 
 import findCommonCommits from './findCommonCommits';
 

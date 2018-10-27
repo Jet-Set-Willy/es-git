@@ -9,11 +9,11 @@
 This basic example shows how to do low-level manipulation of an in-memory repository
 
 ```js
-import { Mode, mix } from '@es-git/core';
-import MemoryRepo from '@es-git/memory-repo';
-import objectMixin from '@es-git/object-mixin';
-import saveAsMixin from '@es-git/save-as-mixin';
-import loadAsMixin from '@es-git/load-as-mixin';
+import { Mode, mix } from '@rs4/es-git-core';
+import MemoryRepo from '@rs4/es-git-memory-repo';
+import objectMixin from '@rs4/es-git-object-mixin';
+import saveAsMixin from '@rs4/es-git-save-as-mixin';
+import loadAsMixin from '@rs4/es-git-load-as-mixin';
 
 async function test(){
   // Create the repository in memory and
@@ -80,33 +80,33 @@ test();
 
 These are the core storage packages. They all implement IRawRepo. Pick one that fits your project, and enhance it with the mixins.
 
-* **[idb-repo](https://www.npmjs.com/package/@es-git/idb-repo)**
-* **[memory-repo](https://www.npmjs.com/package/@es-git/memory-repo)**
-* **[node-fs-repo](https://www.npmjs.com/package/@es-git/node-fs-repo)**
+* **[idb-repo](https://www.npmjs.com/package/@rs4/es-git-idb-repo)**
+* **[memory-repo](https://www.npmjs.com/package/@rs4/es-git-memory-repo)**
+* **[node-fs-repo](https://www.npmjs.com/package/@rs4/es-git-node-fs-repo)**
 
 ## Mixins
 
 These mixins add features to the repo. Some of them depend on other mixins, so the order in which the mixins are applied is significant.
 
-* **[zlib-mixin](https://www.npmjs.com/package/@es-git/zlib-mixin)**
-* **[object-mixin](https://www.npmjs.com/package/@es-git/object-mixin)**
-* **[fetch-mixin](https://www.npmjs.com/package/@es-git/fetch-mixin)**
-* **[cache-objects-mixin](https://www.npmjs.com/package/@es-git/cache-objects-mixin)** (depends on `object-mixin`)
-* **[read-combiner-mixin](https://www.npmjs.com/package/@es-git/read-combiner-mixin)** (depends on `object-mixin`)
-* **[path-to-object-mixin](https://www.npmjs.com/package/@es-git/path-to-object-mixin)** (depends on `object-mixin`)
-* **[load-as-mixin](https://www.npmjs.com/package/@es-git/load-as-mixin)** (depends on `object-mixin`)
-* **[save-as-mixin](https://www.npmjs.com/package/@es-git/save-as-mixin)** (depends on `object-mixin`)
-* **[walkers-mixin](https://www.npmjs.com/package/@es-git/walkers-mixin)** (depends on `object-mixin`)
-* **[commit-mixin](https://www.npmjs.com/package/@es-git/commit-mixin)** (depends on `object-mixin`)
-* **[push-mixin](https://www.npmjs.com/package/@es-git/push-mixin)** (depends on `object-mixin` and `walkers-mixin`)
-* **[checkout-mixin](https://www.npmjs.com/package/@es-git/checkout-mixin)** (depends on `object-mixin` and `walkers-mixin`)
+* **[zlib-mixin](https://www.npmjs.com/package/@rs4/es-git-zlib-mixin)**
+* **[object-mixin](https://www.npmjs.com/package/@rs4/es-git-object-mixin)**
+* **[fetch-mixin](https://www.npmjs.com/package/@rs4/es-git-fetch-mixin)**
+* **[cache-objects-mixin](https://www.npmjs.com/package/@rs4/es-git-cache-objects-mixin)** (depends on `object-mixin`)
+* **[read-combiner-mixin](https://www.npmjs.com/package/@rs4/es-git-read-combiner-mixin)** (depends on `object-mixin`)
+* **[path-to-object-mixin](https://www.npmjs.com/package/@rs4/es-git-path-to-object-mixin)** (depends on `object-mixin`)
+* **[load-as-mixin](https://www.npmjs.com/package/@rs4/es-git-load-as-mixin)** (depends on `object-mixin`)
+* **[save-as-mixin](https://www.npmjs.com/package/@rs4/es-git-save-as-mixin)** (depends on `object-mixin`)
+* **[walkers-mixin](https://www.npmjs.com/package/@rs4/es-git-walkers-mixin)** (depends on `object-mixin`)
+* **[commit-mixin](https://www.npmjs.com/package/@rs4/es-git-commit-mixin)** (depends on `object-mixin`)
+* **[push-mixin](https://www.npmjs.com/package/@rs4/es-git-push-mixin)** (depends on `object-mixin` and `walkers-mixin`)
+* **[checkout-mixin](https://www.npmjs.com/package/@rs4/es-git-checkout-mixin)** (depends on `object-mixin` and `walkers-mixin`)
 
 ## Other packages
 
-* **[mix](https://www.npmjs.com/package/@es-git/mix)**
-* **[node-git-proxy](https://www.npmjs.com/package/@es-git/node-git-proxy)**
-* **[terminal](https://www.npmjs.com/package/@es-git/terminal)**
-* **[ascii-graph-walker](https://www.npmjs.com/package/@es-git/ascii-graph-walker)**
+* **[mix](https://www.npmjs.com/package/@rs4/es-git-mix)**
+* **[node-git-proxy](https://www.npmjs.com/package/@rs4/es-git-node-git-proxy)**
+* **[terminal](https://www.npmjs.com/package/@rs4/es-git-terminal)**
+* **[ascii-graph-walker](https://www.npmjs.com/package/@rs4/es-git-ascii-graph-walker)**
 
 ## Relationship to [JS-Git](https://github.com/creationix/js-git)
 

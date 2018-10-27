@@ -6,7 +6,7 @@ import composeWantRequest from './composeWantRequest';
 import commonCapabilities from './commonCapabilities';
 import post, { Fetch as FetchPackFetch } from './post';
 import parsePackResponse from './parsePackResponse';
-import { unpack, RawObject, Progress } from '@es-git/packfile';
+import { unpack, RawObject, Progress } from '@rs4/es-git-packfile';
 import remotesToLocals from './remotesToLocals';
 import defer from './utils/defer';
 
