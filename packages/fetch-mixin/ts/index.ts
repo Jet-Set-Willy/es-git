@@ -22,7 +22,7 @@ export interface IFetchRepo {
     refspec?: string | string[],
     options?: FetchOptions
   ): Promise<RefChange[]>;
-  lsRemote(url: string): Promise<Ref[]>;
+  lsRemote(url: string, auth?: Auth): Promise<Ref[]>;
 }
 
 export default function fetchMixin<T extends Constructor<IRawRepo>>(
@@ -79,8 +79,8 @@ export default function fetchMixin<T extends Constructor<IRawRepo>>(
       return refs;
     }
 
-    async lsRemote(url: string): Promise<Ref[]> {
-      const result = await lsRemote(url, fetch);
+    async lsRemote(url: string, auth: Auth): Promise<Ref[]> {
+      const result = await lsRemote(url, fetch, undefined, auth);
       return result.remoteRefs;
     }
   };
