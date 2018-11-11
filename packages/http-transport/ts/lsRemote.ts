@@ -1,6 +1,6 @@
 import parseRefsResponse from "./parseRefsResponse";
 import { Ref } from "./types";
-import { Auth } from "./post";
+import { Auth, authorization } from "./authorization";
 
 export { Ref };
 
@@ -16,15 +16,7 @@ export interface FetchResponse {
   readonly status: number;
   readonly statusText: string;
 }
-function authorization(auth?: Auth): {} {
-  if (auth) {
-    return {
-      Authorization: `Basic ${btoa(`${auth.username}:${auth.password}`)}`
-    };
-  } else {
-    return {};
-  }
-}
+
 export default async function lsRemote(
   url: string,
   fetch: Fetch,
