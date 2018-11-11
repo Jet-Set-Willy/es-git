@@ -3,6 +3,7 @@ export type Auth = { username: string; password: string } | { bearer: string };
 export function authorization(auth?: Auth): {} {
   if (auth) {
     if ("bearer" in auth) {
+      // For jwt type auth
       return {
         authorization: `Bearer ${auth.bearer}`
       };
