@@ -1,7 +1,7 @@
 {
   "name": "@rs4/es-git-example",
   "private": true,
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "@rs4/es-git-checkout-mixin": "^0.9.5",
     "@rs4/es-git-commit-mixin": "^0.9.5",
     "@rs4/es-git-core": "^0.9.5",
-    "@rs4/es-git-fetch-mixin": "^0.9.5",
+    "@rs4/es-git-fetch-mixin": "^0.9.6",
     "@rs4/es-git-load-as-mixin": "^0.9.5",
     "@rs4/es-git-memory-repo": "^0.9.5",
     "@rs4/es-git-mix": "^0.9.5",
@@ -47,7 +47,7 @@
     "@rs4/es-git-node-git-proxy": "^0.9.5",
     "@rs4/es-git-object-mixin": "^0.9.5",
     "@rs4/es-git-path-to-object-mixin": "^0.9.5",
-    "@rs4/es-git-push-mixin": "^0.9.5",
+    "@rs4/es-git-push-mixin": "^0.9.6",
     "@rs4/es-git-save-as-mixin": "^0.9.5",
     "@rs4/es-git-terminal": "^0.9.5",
     "@rs4/es-git-walkers-mixin": "^0.9.5",
