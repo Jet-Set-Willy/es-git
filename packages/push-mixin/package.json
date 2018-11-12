@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-push-mixin",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
