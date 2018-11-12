@@ -54,8 +54,9 @@ export default function pushMixin<
       options: PushOptions = {}
     ): Promise<RefResult[]> {
       const refs = await getRefs(ref, ref => super.getRef(ref));
-
-      const { remoteRefs } = await lsRemote(url, fetch, undefined, auth);
+      const refsSet = new Set(refs.map(r => r.remote));
+      let { remoteRefs } = await lsRemote(url, fetch, undefined, auth);
+      remoteRefs = remoteRefs.filter(r => refsSet.has(r.name));
       const remoteMap = new Map<string, string>(
         remoteRefs.map<[string, string]>(r => [r.name, r.hash])
       );
