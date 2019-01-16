@@ -63,6 +63,7 @@ export default function commitMixin<
       parents: string[]
     ): Promise<Hash> {
       if (parents.length === 0) {
+        // Use the ref if no parents supplied
         const originalHash = await super.getRef(ref);
         if (!originalHash) throw new Error(`Unknown ref ${ref}`);
         parents = [originalHash];
