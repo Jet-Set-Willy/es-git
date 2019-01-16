@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-commit-mixin",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
