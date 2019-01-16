@@ -1,56 +1,81 @@
-import { Type, Mode, Constructor, IRawRepo, Hash, encode } from '@rs4/es-git-core';
-import { IObjectRepo, Person, ModeHash } from '@rs4/es-git-object-mixin';
+import {
+  Type,
+  Mode,
+  Constructor,
+  IRawRepo,
+  Hash,
+  encode
+} from "@rs4/es-git-core";
+import { IObjectRepo, Person, ModeHash } from "@rs4/es-git-object-mixin";
 
 export type Folder = {
-  readonly files? : {
-    readonly [key : string] : File | TextFile | ExistingFile;
-  }
-  readonly folders? : {
-    readonly [key : string] : Folder | Hash;
-  }
-}
+  readonly files?: {
+    readonly [key: string]: File | TextFile | ExistingFile;
+  };
+  readonly folders?: {
+    readonly [key: string]: Folder | Hash;
+  };
+};
 
 export type File = {
-  readonly isExecutable? : boolean
-  readonly body : Uint8Array
-}
+  readonly isExecutable?: boolean;
+  readonly body: Uint8Array;
+};
 
 export type TextFile = {
-  readonly isExecutable? : boolean
-  readonly text : string
-}
+  readonly isExecutable?: boolean;
+  readonly text: string;
+};
 
 export type ExistingFile = {
-  readonly isExecutable? : boolean
-  readonly hash : Hash
-}
+  readonly isExecutable?: boolean;
+  readonly hash: Hash;
+};
 
 export { Hash };
 
 export interface ICommitRepo {
-  commit(ref : string, tree : Folder, message : string, author : Person, committer? : Person) : Promise<Hash>
-  saveTree(folder : Folder | Hash) : Promise<Hash>
+  commit(
+    ref: string,
+    tree: Folder,
+    message: string,
+    author: Person,
+    committer: Person,
+    parents: string[]
+  ): Promise<Hash>;
+  saveTree(folder: Folder | Hash): Promise<Hash>;
 }
 
-export default function commitMixin<T extends Constructor<IObjectRepo & IRawRepo>>(repo : T) : Constructor<ICommitRepo> & T {
+export default function commitMixin<
+  T extends Constructor<IObjectRepo & IRawRepo>
+>(repo: T): Constructor<ICommitRepo> & T {
   return class CommitRepo extends repo implements ICommitRepo {
-    constructor(...args : any[]){
+    constructor(...args: any[]) {
       super(...args);
     }
 
-    async commit(ref : string, tree : Folder, message : string, author : Person, committer = author) : Promise<Hash> {
-      const originalHash = await super.getRef(ref);
-      if(!originalHash) throw new Error(`Unknown ref ${ref}`);
-
+    async commit(
+      ref: string,
+      tree: Folder,
+      message: string,
+      author: Person,
+      committer: Person,
+      parents: string[]
+    ): Promise<Hash> {
+      if (parents.length === 0) {
+        const originalHash = await super.getRef(ref);
+        if (!originalHash) throw new Error(`Unknown ref ${ref}`);
+        parents = [originalHash];
+      }
       const treeHash = await this.saveTree(tree);
 
       const hash = await super.saveObject({
         type: Type.commit,
-        body:{
+        body: {
           author,
           committer,
           message,
-          parents: [originalHash],
+          parents,
           tree: treeHash
         }
       });
@@ -59,22 +84,25 @@ export default function commitMixin<T extends Constructor<IObjectRepo & IRawRepo
       return hash;
     }
 
-    async saveTree(folder : Folder | Hash) : Promise<Hash> {
-      if(typeof(folder) === 'string') return folder;
+    async saveTree(folder: Folder | Hash): Promise<Hash> {
+      if (typeof folder === "string") return folder;
 
-      const body : {[key : string] : ModeHash} = {};
+      const body: { [key: string]: ModeHash } = {};
 
-      if(folder.folders){
-        for(const name of Object.keys(folder.folders)){
+      if (folder.folders) {
+        for (const name of Object.keys(folder.folders)) {
           const hash = await this.saveTree(folder.folders[name]);
-          body[name] = {hash, mode: Mode.tree};
+          body[name] = { hash, mode: Mode.tree };
         }
       }
 
-      if(folder.files){
-        for(const name of Object.keys(folder.files)){
+      if (folder.files) {
+        for (const name of Object.keys(folder.files)) {
           const hash = await this.saveFile(folder.files[name]);
-          body[name] = {hash, mode: folder.files[name].isExecutable ? Mode.exec : Mode.file};
+          body[name] = {
+            hash,
+            mode: folder.files[name].isExecutable ? Mode.exec : Mode.file
+          };
         }
       }
 
@@ -84,21 +112,23 @@ export default function commitMixin<T extends Constructor<IObjectRepo & IRawRepo
       });
     }
 
-    async saveFile(file : File | TextFile | ExistingFile) : Promise<Hash>{
-      if(isHash(file)) return file.hash;
+    async saveFile(file: File | TextFile | ExistingFile): Promise<Hash> {
+      if (isHash(file)) return file.hash;
 
-      if(isText(file))
-        return await super.saveObject({type: Type.blob, body: encode(file.text)});
-      else
-        return await super.saveObject({type: Type.blob, body: file.body});
+      if (isText(file))
+        return await super.saveObject({
+          type: Type.blob,
+          body: encode(file.text)
+        });
+      else return await super.saveObject({ type: Type.blob, body: file.body });
     }
-  }
+  };
 }
 
-function isHash(file : File | TextFile | ExistingFile) : file is ExistingFile {
-  return 'hash' in file;
+function isHash(file: File | TextFile | ExistingFile): file is ExistingFile {
+  return "hash" in file;
 }
 
-function isText(file : File | TextFile) : file is TextFile {
-  return 'text' in file;
+function isText(file: File | TextFile): file is TextFile {
+  return "text" in file;
 }
