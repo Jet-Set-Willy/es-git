@@ -1,6 +1,6 @@
 {
   "name": "@rs4/es-git-core",
-  "version": "0.9.5",
+  "version": "0.9.8",
   "description": "",
   "main": "js/index.js",
   "types": "es/index.d.ts",
